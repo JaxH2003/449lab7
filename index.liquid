@@ -2,8 +2,19 @@
 layout: layout.liquid
 title: 11ty Boilerplate
 ---
-
-<div x-data="{thumbimg: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
-    <img alt="thumbnail" x-bind:src="thumbimg" />
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+        <div class="grid grid-cols-2 gap-4">
+<div x-data="{thumbphone: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+    <img alt="thumbnail" x-bind:src="thumbphone" />
 </div>
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Hover me</button>
+<div x-data="{thumbphonex: $fetchjson('https://dummyjson.com/products/2', jsonItem='thumbnail')}">
+    <img alt="thumbnail" x-bind:src="thumbphonex" />
+</div>
+
+
+
+
+
+
+
