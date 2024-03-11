@@ -3,20 +3,20 @@ layout: layout.liquid
 title: Using API Endpoints and Tailwind
 ---
 <body class="bg-purple-400">
-    <h1 class="text-center text-3xl font-bold mt-10">Phone API Examples from DummyJson</h1>
+    <h1 class="text-center text-3xl font-bold mt-10">Phone API Endpoints from DummyJson</h1>
     <div class="container mx-auto mt-10 grid grid-cols-2 gap-4">
         <div class="flex justify-center items-center">
             <div x-data="{thumbphone: $fetchjson('https://dummyjson.com/products/4', jsonItem='thumbnail')}">
                 <img alt="thumbnail" x-bind:src="thumbphone" class="border-4 border-blue-500 rounded-md" />
                 <h2 class="text-center text-2xl font-bold mt-10">OPPO F19 by OPPO</h2>
-                <table class="mt-4">
+                <table class="table-auto mt-4 ml-20">
                     <tr>
                         <td class="font-bold pl-12">Size:</td>
                         <td>Height=6.31in, Width= 2.91in</td>
                     </tr>
                     <tr>
                         <td class="font-bold pl-12">Price:</td>
-                        <td>$280</td>
+                        <td class="pl-2">$280</td>
                     </tr>
                 </table>
             </div>
@@ -25,14 +25,14 @@ title: Using API Endpoints and Tailwind
             <div x-data="{thumbphonex: $fetchjson('https://dummyjson.com/products/2', jsonItem='thumbnail')}">
                 <img alt="thumbnail" x-bind:src="thumbphonex" class="border-4 border-blue-500 rounded-md" />
                 <h2 class="text-center text-2xl font-bold mt-10">IPhone X by Apple</h2>
-                <table class="mt-4">
+                <table class="table-auto mt-4 ml-20">
                     <tr>
                         <td class="font-bold pl-12">Size:</td>
                         <td>Height=5.65in, Width= 2.79in</td>
                     </tr>
                     <tr>
                         <td class="font-bold pl-12">Price:</td>
-                        <td>$899</td>
+                        <td class="pl-2">$899</td>
                     </tr>
                 </table>
             </div>
